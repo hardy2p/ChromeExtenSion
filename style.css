@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+#background {
+    text-align: center;
+    width: 100%;
+}
+
+#searchContainer {
+    margin-bottom: 30px; /* Space between search and joke */
+}
+
+#searchBar {
+    width: 400px; /* Increased width for the search bar */
+    padding: 15px; /* Increased padding for a larger input area */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Increased font size */
+    font-weight: bold; /* Bold text */
+}
+
+#searchButton {
+    padding: 15px 20px; /* Button padding */
+    margin-left: 5px; /* Space between input and button */
+    border: none;
+    background-color: #4285f4; /* Google blue */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.2em; /* Font size */
+}
+
+#searchButton:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+}
+
+#jokeContainer {
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 90%; /* Responsive max width */
+    display: inline-block; /* Center the joke container */
+}
+
+#jokeElement {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for joke */
+}
+
+@media (max-width: 600px) {
+    #searchBar {
+        width: 80%; /* Responsive width for smaller screens */
+    }
+
+    #jokeContainer {
+        font-size: 1.2em; /* Smaller font size on mobile */
+        padding: 20px; /* Less padding on smaller screens */
+    }
+}
